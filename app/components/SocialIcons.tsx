@@ -17,9 +17,9 @@ export const socialLinks: SocialLink[] = [
   {
     iconUrl:
       "https://actorsaccess.com/global/assets/images/logos/logo_actors_access_plus_by_breakdown_services_left.svg", // use local upload (recommended)
-    linkUrl: "https://resumes.actorsaccess.com/johnny-blake",
+    linkUrl: "https://resumes.actorsaccess.com/johnnyblakeactor",
     label: "Actors Access",
-    subtext: "/johnny-blake",
+    subtext: "/johnnyblakeactor",
   },
   {
     iconUrl:
@@ -62,12 +62,13 @@ export default function SocialIcons() {
             href={item.linkUrl}
             target="_blank"
             rel="noopener noreferrer"
+            className="social-link"
             style={{
               display: "flex",
               alignItems: "center",
               gap: "12px",
               textDecoration: "none",
-              color: "#00eaff",
+              color: "#fff",
 
               // responsive sizing:
               flex: "1 1 220px", // grows, shrinks, wraps at ~220px
@@ -87,12 +88,9 @@ export default function SocialIcons() {
                 height={44}
                 style={{
                   display: "block",
-                  background: "rgba(255, 255, 255, 0.8)", // you were missing the closing )
+                  background: "rgba(255, 255, 255, 0.8)",
                   borderRadius: "8px",
-                  flexShrink: 0, // prevents icon squishing// Change your drop-shadow and text color
-                  color: "#ffcc00",
-                  filter:
-                    "drop-shadow(0 0 6px #ffcc00) drop-shadow(0 0 12px #ffcc00)",
+                  flexShrink: 0,
                 }}
               />
             )}
