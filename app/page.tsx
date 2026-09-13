@@ -1,55 +1,17 @@
 "use client";
-import { motion } from "framer-motion";
-// import Link from "next/link";
-
 import "./styles.css";
 import { TypingText } from "@/components/TypingText";
 import Image from "next/image";
-import { useEffect, useMemo, useState } from "react";
 import { Glitch } from "@/components/Glitch";
-import Guestbook from "./components/Guestbook";
 import styles from "./App.module.css";
 import SocialIcons from "./components/SocialIcons";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
-// import { TypingText } from "@/components/TypingText";
 
 export default function HomePage() {
   const shouldAnimate = true;
-  const [stats, setStats] = useState<any>({});
-  const [isAdmin, setIsAdmin] = useState<boolean>(false);
-  useEffect(() => {
-    const VISIT_KEY = "last_visit_timestamp";
-    const FIVE_MINUTES = 5 * 60 * 1000;
-    const now = Date.now();
-    const lastVisit = parseInt(localStorage.getItem(VISIT_KEY) || "0", 10);
-
-    const shouldPost = isNaN(lastVisit) || now - lastVisit > FIVE_MINUTES;
-
-    const method = shouldPost ? "POST" : "GET";
-
-    fetch("/api/visit", { method })
-      .then((res) => res.json())
-      .then(setStats);
-
-    if (shouldPost) {
-      localStorage.setItem(VISIT_KEY, now.toString());
-    }
-  }, []);
 
   return (
     <>
-      {isAdmin && (
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="stats"
-        >
-          <u>stats</u>
-          total visits: {stats.totalVisits.toLocaleString()}
-          unique visitors: {stats.uniqueVisitors.toLocaleString()}
-        </motion.div>
-      )}
       <main className={styles.main}>
         {/* <Head>
         <link

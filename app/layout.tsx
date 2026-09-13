@@ -1,4 +1,3 @@
-import { QueryProvider } from "@/components/QueryProvider";
 import { Analytics } from "@/components/Analytics";
 import "./globals.css";
 
@@ -23,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <QueryProvider>{children}</QueryProvider>
+        {children}
         <Analytics />
       </body>
     </html>

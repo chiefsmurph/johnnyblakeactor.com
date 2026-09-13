@@ -1,5 +1,5 @@
 {
-  "name": "modern-orange-pineapple",
+  "name": "johnny-blake-actor",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -9,15 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@tanstack/react-query": "^5.70.0",
-    "clsx": "^2.1.1",
     "framer-motion": "^12.6.2",
-    "keen-slider": "^6.8.6",
-    "micro": "^10.0.1",
     "next": "15.2.4",
     "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "stripe": "^18.1.0"
+    "react-dom": "19.0.0"
   },
   "devDependencies": {
     "@types/node": "22.13.14",
