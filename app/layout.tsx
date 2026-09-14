@@ -21,6 +21,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          defer
+          src="https://stats.chiefsmurph.com/script.js"
+          data-website-id="d266d1b1-aa0a-48ee-b59a-7f38bd3b26fe"
+        />
+      </head>
       <body>
         {children}
         <Analytics />
