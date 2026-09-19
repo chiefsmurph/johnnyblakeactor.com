@@ -147,15 +147,16 @@ Training: Berklee, Berg Studios.`
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(3, 1fr)",
+              gridTemplateColumns: "repeat(2, 1fr)",
               gap: "8px",
               margin: "2rem 0",
             }}
           >
             {[
+              { src: "/images/cleaned1.jpg", position: "center top" },
               { src: "/images/gallery/7795dcfb-6606-4ae9-8165-ed0d868bdb14-bWFpbi1uLW4tMC0wLTAtMC0w.jpg", position: "75% top" },
-              { src: "/images/gallery/b757629e-5d80-4fab-ae9c-ae02c6e27625-bWFpbi1uLW4tMC0wLTAtMC0w.jpg", position: "5% center" },
               { src: "/images/gallery/wifeisbackstill.png", position: "58% 8%" },
+              { src: "/images/gallery/b757629e-5d80-4fab-ae9c-ae02c6e27625-bWFpbi1uLW4tMC0wLTAtMC0w.jpg", position: "5% center" },
             ].map(({ src, position }, i) => (
               <div key={i} style={{ height: "280px", overflow: "hidden" }}>
                 <Image
