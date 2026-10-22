@@ -6,7 +6,7 @@ import styles from "../App.module.css";
 const TAKEN = "October 21, 2026";
 
 const PHOTOS: { src: string; width: number; height: number }[] = [
-  { src: "/images/current/johnny-blake-oct-2026-1.jpg", width: 1500, height: 2000 },
+  { src: "/images/current/johnny-blake-oct-2026-smile.jpg", width: 1500, height: 2000 },
   { src: "/images/current/johnny-blake-oct-2026-2.jpg", width: 1500, height: 2000 },
 ];
 
