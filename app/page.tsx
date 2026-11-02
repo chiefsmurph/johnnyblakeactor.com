@@ -57,7 +57,7 @@ export default function HomePage() {
 
         <Glitch delay={0.4} className="glitch" style={{}}>
           <Image
-            src={"/images/JB-headshot-sep-2026.jpg"}
+            src={"/images/JB-headshot-feb-2026-grey.jpg"}
             alt="Official headshot for Johnny Blake, Los Angeles film actor."
             width={800}
             height={1000}
