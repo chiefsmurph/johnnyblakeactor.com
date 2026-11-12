@@ -179,7 +179,7 @@ Training: Berklee, Berg Studios.`
 
         <Glitch delay={6} className={styles["video-wrapper"]} breathe={false}>
           <h1>Acting Reel</h1>
-          <YouTubeEmbed videoId="Ik2csbYI6Gg" />
+          <YouTubeEmbed videoId="8tD1hTE2_5w" />
           {/* <video controls width="100%">
             <source
               src="/videos/johnny_keeys_reel_feb_2026_web.mp4"
